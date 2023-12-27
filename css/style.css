@@ -5,6 +5,14 @@
 @font-face {
   font-family: Rubik;
   font-display: swap;
+  src: url("../fonts/Rubik-Black.woff2") format("woff2"), url("../fonts/Rubik-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Rubik;
+  font-display: swap;
   src: url("../fonts/Rubik-Bold.woff2") format("woff2"), url("../fonts/Rubik-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
@@ -13,8 +21,16 @@
 @font-face {
   font-family: Rubik;
   font-display: swap;
-  src: url("../fonts/Rubik-Black.woff2") format("woff2"), url("../fonts/Rubik-Black.woff") format("woff");
-  font-weight: 900;
+  src: url("../fonts/Rubik-Medium.woff2") format("woff2"), url("../fonts/Rubik-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Rubik;
+  font-display: swap;
+  src: url("../fonts/Rubik-Regular.woff2") format("woff2"), url("../fonts/Rubik-Regular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -29,8 +45,8 @@
 @font-face {
   font-family: Rubik;
   font-display: swap;
-  src: url("../fonts/Rubik-Regular.woff2") format("woff2"), url("../fonts/Rubik-Regular.woff") format("woff");
-  font-weight: 400;
+  src: url("../fonts/Rubik-SemiBold.woff2") format("woff2"), url("../fonts/Rubik-SemiBold.woff") format("woff");
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -152,6 +168,7 @@ body {
 
 .main-block__title {
   font-size: 65px;
+  line-height: 65px;
   margin-top: 60px;
   font-weight: 600;
   text-transform: uppercase;
@@ -225,6 +242,12 @@ body {
   transition: 0.3s;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.up__blur {
+  height: 100px !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), color-stop(rgba(255, 255, 255, 0.8)), color-stop(rgba(255, 255, 255, 0.6)), color-stop(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0))) !important;
+  background: linear-gradient(180deg, rgb(255, 255, 255), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0)) !important;
 }
 
 /** Подключение стилей отдельных блоков и секций */
@@ -610,7 +633,7 @@ body {
   background: url("../images/hero-main.jpg") no-repeat 45% 50%; }
 
 .hero {
-  background-size: cover;
+  background-size: cover !important;
   height: 100vh;
   position: relative;
   /*box-shadow: 0px -80px 45px -31px rgba(255, 255, 255, 1) inset, 0px 21px 11px 0px rgba(255, 255, 255, 1);*/
@@ -657,8 +680,9 @@ body {
   text-transform: uppercase;
   text-align: left;
   font-family: Rubik;
-  line-height: 120px;
+  line-height: 1 !important;
   position: relative;
+  margin: 0;
 }
 
 .hero__signature {
@@ -668,9 +692,12 @@ body {
 }
 
 .hero__button {
+  margin-top: 10px;
   width: 67%;
   padding: 16px 30px;
-  font-size: 24px;
+  font-size: 30px;
+  border-radius: 20px;
+  font-weight: 300;
 }
 
 .white__shadow {
@@ -886,7 +913,7 @@ body {
   margin-top: 20px;
   padding: 0;
   width: 80%;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .about-block__title_height {
@@ -1193,7 +1220,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  line-height: 24px;
+  line-height: 20px;
 }
 
 .destinations-card__img {
@@ -1283,7 +1310,7 @@ body {
 
 .our-life__accent {
   font-size: 32px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .our-life__swiper {
@@ -1322,13 +1349,10 @@ body {
 
 .our-life__button {
   border-radius: 10px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgb(171, 145, 196)), color-stop(0%, rgb(89, 200, 200)), to(rgb(55, 147, 148)));
-  background: linear-gradient(180deg, rgb(171, 145, 196) 0%, rgb(89, 200, 200) 0%, rgb(55, 147, 148) 100%);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgb(171, 145, 196)), color-stop(0%, rgb(89, 200, 200)), to(rgb(55, 147, 148))) padding-box, -webkit-gradient(linear, left top, left bottom, from(white), to(#379394)) border-box;
-  background: linear-gradient(180deg, rgb(171, 145, 196) 0%, rgb(89, 200, 200) 0%, rgb(55, 147, 148) 100%) padding-box, linear-gradient(to bottom, white, #379394) border-box;
+  background: linear-gradient(0deg, #57C2C2, #57C2C2) padding-box, linear-gradient(180deg, #AB91C4 0%, #B68CE4 100%) padding-box, linear-gradient(180.44deg, #FFFFFF 0.39%, rgba(255, 255, 255, 0) 99.49%) padding-box, linear-gradient(to bottom, white, #379394) border-box;
   -webkit-box-shadow: none;
           box-shadow: none;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 .our-life__button:hover {
@@ -1420,7 +1444,7 @@ body {
   background: url("../images/team-bg.jpg") no-repeat 50% 100%, #D4B6DC; }
 
 .team {
-  background-size: auto 100%;
+  background-size: auto 100% !important;
   padding-bottom: 0;
   height: 1100px;
   position: relative;
@@ -1434,8 +1458,8 @@ body {
   color: white;
   margin-left: 100px;
   font-size: 100px;
-  font-weight: 600;
-  text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1882352941);
+  font-weight: 500;
+  line-height: 1;
   z-index: 5;
   position: relative;
 }
@@ -1593,7 +1617,7 @@ body {
 .feedback__text {
   color: white;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0em;
   text-align: left;
 }
@@ -1849,7 +1873,7 @@ body {
   background: url("../images/back-concept.jpg") no-repeat 50% 50%; }
 
 .concept {
-  background-size: cover;
+  background-size: cover !important;
   position: relative;
   min-height: 1100px;
 }
@@ -1863,7 +1887,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 20px;
+  gap: 30px;
 }
 
 .concept__block {
@@ -1897,6 +1921,10 @@ body {
 .concept__text {
   width: 70%;
   font-size: 20px;
+}
+
+.concept__title {
+  font-weight: 500;
 }
 
 @media (max-width: 1920.98px) {
@@ -2207,6 +2235,7 @@ body {
 @media (max-width: 1200px) {
   .main-block__title {
     font-size: 60px;
+    line-height: 60px;
   }
 
   .card__title {
@@ -2362,6 +2391,7 @@ body {
     width: 60%;
     padding: 12px 30px;
     font-size: 16px;
+    border-radius: 12px;
   }
 
   .arrow-icon {
@@ -2383,6 +2413,10 @@ body {
 
   .button__direction {
     font-size: 12px;
+  }
+
+  .about-block__title_height {
+    line-height: 18px;
   }
 
   .about-block__text {
@@ -2598,7 +2632,7 @@ body {
 
   .team__title {
     font-size: 34px;
-    margin-top: 0;
+    margin-top: 30px;
   }
 
   .team__gallery {
@@ -2650,6 +2684,7 @@ body {
 
   .main-block__title {
     font-size: 30px;
+    line-height: 30px;
     text-align: center;
   }
 
@@ -2734,7 +2769,7 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/hero-main.jpg") no-repeat 75% 50%; }
 
   .hero {
-    background-size: cover;
+    background-size: cover !important;
     min-height: 100vh;
   }
 
@@ -2766,8 +2801,9 @@ body {
   .hero__button {
     margin-top: 15px;
     width: 60%;
-    padding: 12px 10px;
-    font-size: 12px;
+    padding: 12px 5px;
+    font-size: 14px;
+    margin-top: 0px;
   }
 
   .arrow-icon {
@@ -2797,6 +2833,10 @@ body {
 
   .direction-block__slider-content {
     gap: 5px;
+  }
+
+  .about-block__title_height {
+    line-height: 26px;
   }
 
   .about-card__number-wrapper {
@@ -2905,6 +2945,10 @@ body {
             transform: rotate(180deg);
   }
 
+  .our-life__img img {
+    border-radius: 12px;
+  }
+
   .our-life__star {
     display: none;
   }
@@ -2920,13 +2964,13 @@ body {
   }
 
   .our-life {
-    min-height: 600px;
+    min-height: 700px;
   }
 
   .our-life__content {
     position: absolute;
     margin: auto;
-    top: 0;
+    top: 60px;
     bottom: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2940,8 +2984,6 @@ body {
             align-items: center;
     width: 90%;
     height: 80%;
-    margin-bottom: 20px;
-    margin-top: 20px;
   }
 
   .our-life__button {
@@ -2949,7 +2991,7 @@ body {
   }
 
   .our-life__text {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .our-life__title {
@@ -2986,7 +3028,7 @@ body {
   }
 
   .feedback {
-    margin-top: 10px;
+    margin-top: 80px;
   }
 
   .feedback__block {
@@ -3014,8 +3056,8 @@ body {
   }
 
   .feedback__form {
-    /*margin-top: 15px;
-    display: flex;
+    margin-top: 30px;
+    /*display: flex;
     flex-direction: column;
     gap: 15px;*/
     width: 100%;
@@ -3099,8 +3141,11 @@ body {
     display: none;
   }
 
+  .no-webp .concept{
+    background: url(../images/back-concept.jpg) no-repeat 0% 50%; }
+
   .concept {
-    min-height: 600px;
+    min-height: 800px;
   }
 
   .concept__medal {
@@ -3125,7 +3170,7 @@ body {
 
   .concept__content {
     margin-top: 0;
-    top: 0;
+    top: 100px;
     gap: 25px;
   }
 
@@ -3164,4 +3209,9 @@ body {
 @media (max-width: 768px){
 
   .webp .hero{ background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../images/hero-main.webp) no-repeat 75% 50%; background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/hero-main.webp) no-repeat 75% 50%; }
+}
+
+@media (max-width: 768px){
+
+  .webp .concept{ background: url(../images/back-concept.webp) no-repeat 0% 50%; }
 }
