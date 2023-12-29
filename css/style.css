@@ -267,6 +267,12 @@ body {
   gap: 8px;
 }
 
+.header__out {
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
 .burger__line {
   width: 30px;
   height: 2px;
@@ -345,6 +351,8 @@ body {
 }
 
 .header_scroll .logo__wrapper {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   height: 130px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -359,7 +367,16 @@ body {
 }
 
 .logo__wrapper {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  height: 80px;
   width: 150px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .header-menu__element {
@@ -1245,7 +1262,7 @@ body {
 }
 
 .no-webp .our-life{
-  background: url("../images/our-life.jpg") no-repeat 50% 50%; }
+  background: url("../images/our-life.jpg") no-repeat 55% 50%; }
 
 .our-life {
   margin-top: 0px;
@@ -1256,7 +1273,7 @@ body {
 .our-life__content {
   position: absolute;
   bottom: 0;
-  right: 25%;
+  right: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1955,6 +1972,7 @@ body {
   }
 
   .team {
+    margin-top: 20px;
     padding-top: 40px;
     padding-bottom: 70px;
     height: 840px;
@@ -1962,7 +1980,7 @@ body {
 
   .team__title {
     font-size: 80px;
-    margin-top: 60px;
+    margin-top: 0px;
   }
 
   .team__gallery {
@@ -1971,7 +1989,7 @@ body {
   }
 
   .team-gallery {
-    bottom: 20px;
+    bottom: -40px;
   }
 
   .team-gallery__slide {
@@ -2581,6 +2599,8 @@ body {
   }
 
   .header_scroll .logo__wrapper {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
     height: 60px;
   }
 
@@ -3200,7 +3220,7 @@ body {
 
 .webp .hero{ background: url(../images/hero-main.webp) no-repeat 45% 50%; }
 
-.webp .our-life{ background: url(../images/our-life.webp) no-repeat 50% 50%; }
+.webp .our-life{ background: url(../images/our-life.webp) no-repeat 55% 50%; }
 
 .webp .team{ background: url(../images/team-bg.webp) no-repeat 50% 100%, #D4B6DC; }
 
