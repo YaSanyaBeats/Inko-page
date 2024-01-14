@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css?_v=20231229124358" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.min.css?_v=20231229124358">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20231229124358">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20231229124358"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css?_v=20240114230534" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css?_v=20240114230534">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20240114230534">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?_v=20240114230534">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20240114230534"></script>
     <title>Главная</title>
   </head>
     <body>
@@ -16,19 +17,19 @@
 <header class="header">
     <div class="burger__tint"></div>
     <section class="container header__wrapper">
-      <a href="#" class="logo__wrapper">
+      <a href="/" class="logo__wrapper">
         <img src="images/logo.svg" class="header__logo">
       </a>
       <ul class="header__menu">
-        <li class="header-menu__element"><a class="menu__link header-menu__link">О нас</a></li>
-        <li class="header-menu__element"><a class="menu__link header-menu__link">Гелерея</a></li>
-        <li class="header-menu__element"><a class="menu__link header-menu__link">Направления</a></li>
-        <li class="header-menu__element"><a class="menu__link header-menu__link">Новости</a></li>
-        <li class="header-menu__element"><a class="menu__link header-menu__link">Бюро переводов</a></li>
-        <li class="header-menu__element"><a class="menu__link header-menu__link">Контакты</a></li>
-        <li class="header-menu__element"><a class="menu__link header-menu__link">Отзывы</a></li>
+        <li class="header-menu__element"><a href="/about.html" class="menu__link header-menu__link">О нас</a></li>
+        <li class="header-menu__element"><a href="/gallery.html" class="menu__link header-menu__link">Гелерея</a></li>
+        <li class="header-menu__element"><a href="/directions.html" class="menu__link header-menu__link">Направления</a></li>
+        <li class="header-menu__element"><a href="/news.html" class="menu__link header-menu__link">Новости</a></li>
+        <li class="header-menu__element"><a href="/" class="menu__link header-menu__link">Бюро переводов</a></li>
+        <li class="header-menu__element"><a href="/contacts.html" class="menu__link header-menu__link">Контакты</a></li>
+        <li class="header-menu__element"><a href="/reviews.html" class="menu__link header-menu__link">Отзывы</a></li>
       </ul>
-      <a href="#" class="button button__header">Запись на собеседование</a>
+      <a href="#" class="button button__header" data-fancybox data-src="#popup-main-application">Запись на собеседование</a>
 
       <div class="burger__menu">
         <a class="burger header__burger" data-bs-toggle="collapse" href="#burger-content" role="button" aria-expanded="true" aria-controls="burger-content"> 
@@ -46,27 +47,27 @@
           <ul class="burger__list">
             <li class="header-menu__element"><svg class="star-list">
     <use xlink:href="images/icons/icons.svg#starlist"></use>
-</svg><a href="#" class="menu__link header-menu__link">О нас</a></li>
+</svg><a href="/about.html" class="menu__link header-menu__link">О нас</a></li>
             <li class="header-menu__element"><svg class="star-list">
     <use xlink:href="images/icons/icons.svg#starlist"></use>
-</svg><a href="#" class="menu__link header-menu__link">Гелерея</a></li>
+</svg><a href="/gallery.html" class="menu__link header-menu__link">Гелерея</a></li>
             <li class="header-menu__element"><svg class="star-list">
     <use xlink:href="images/icons/icons.svg#starlist"></use>
-</svg><a href="#" class="menu__link header-menu__link">Направления</a></li>
+</svg><a href="/directions.html" class="menu__link header-menu__link">Направления</a></li>
             <li class="header-menu__element"><svg class="star-list">
     <use xlink:href="images/icons/icons.svg#starlist"></use>
-</svg><a href="#" class="menu__link header-menu__link">Новости</a></li>
+</svg><a href="/news.html" class="menu__link header-menu__link">Новости</a></li>
             <li class="header-menu__element"><svg class="star-list">
     <use xlink:href="images/icons/icons.svg#starlist"></use>
-</svg><a href="#" class="menu__link header-menu__link">Бюро переводов</a></li>
+</svg><a href="/" class="menu__link header-menu__link">Бюро переводов</a></li>
             <li class="header-menu__element"><svg class="star-list">
     <use xlink:href="images/icons/icons.svg#starlist"></use>
-</svg><a href="#" class="menu__link header-menu__link">Контакты</a></li>
+</svg><a href="/contacts.html" class="menu__link header-menu__link">Контакты</a></li>
             <li class="header-menu__element"><svg class="star-list">
     <use xlink:href="images/icons/icons.svg#starlist"></use>
-</svg><a href="#" class="menu__link header-menu__link">Отзывы</a></li>
+</svg><a href="/reviews.html" class="menu__link header-menu__link">Отзывы</a></li>
           </ul>
-          <a class="button button__burger">Запись на собеседование</a>
+          <a class="button button__burger" data-fancybox data-src="#popup-main-application">Запись на собеседование</a>
           <div class="burger__icon-star">
             <img class="icon-star icon-star__first" src="images/burgerstar.svg" alt="">
           </div>
@@ -89,7 +90,7 @@
             <h1 class="hero__text hero__title">Частная школа «ИнкоЛинк»</h1>
             <img class="arrow-icon" src="images/arrow.svg" alt="">
             <span class="hero__text hero__signature">Территория образования!</span>
-            <a href="#" class="button hero__button">Запись на собеседование</a>
+            <a href="#" class="button hero__button" data-fancybox data-src="#popup-main-application">Запись на собеседование</a>
         </div>
         <div class="social__buttons">
             <a href="#" class="button__green hero-button__green"><picture><source srcset="images/message.webp" type="image/webp"><img class="social__image" src="images/message.png" alt=""></picture></a>
@@ -99,7 +100,6 @@
     </div>
     <div class="hero__blur"></div>
 </section>
-<!--<section class="white__shadow"></section>-->
 
             <section class="destinations">
     <div class="container destinations__container">
@@ -878,10 +878,10 @@
     <div class="container footer__wrapper">
         <div class="footer__main-content">
             <ul class="footer__menu">
-                <li class="header-menu__element"><a class="menu__link footer-menu__link">О нас</a></li>
-                <li class="header-menu__element"><a class="menu__link footer-menu__link">Статьи</a></li>
-                <li class="header-menu__element"><a class="menu__link footer-menu__link">Сертификаты</a></li>
-                <li class="header-menu__element"><a class="menu__link footer-menu__link">Фотогалерея</a></li>
+                <li class="header-menu__element"><a href="#" class="menu__link footer-menu__link">О нас</a></li>
+                <li class="header-menu__element"><a href="#" class="menu__link footer-menu__link">Статьи</a></li>
+                <li class="header-menu__element"><a href="#" class="menu__link footer-menu__link">Сертификаты</a></li>
+                <li class="header-menu__element"><a href="#" class="menu__link footer-menu__link">Фотогалерея</a></li>
                 </ul>
             <div class="footer__map footer__map_first">
                 <iframe class="footer__frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3Acb65bca6b97e7f9a6d3d6b3e26d6a7beec1632bf33032aee82e6cee316ac25e1&amp;source=constructor" width="539" height="400" frameborder="0"></iframe>
@@ -908,11 +908,81 @@
         </div>
     </div>
 </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js?_v=20231229124358" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.4.1/index.min.js?_v=20231229124358" integrity="sha512-BD6B4tou7H7CWpfaXthxgqwk7kHs/rPDEk9GD/Rvbx0sCOUdqtrvlBP/o64EmdP5lnGOS4j4FTcn0iPJx6bVCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Popups -->
+<div id="popup-main-application" style="display:none;" class="popup-main-application popups">
+    <button data-fancybox-close="" class="popups__button" title="Close">
+        <img class="popups__button-img" src="images/popups-button.svg" alt="">
+    </button>
+    <span class="popup-main-application__title">Оставьте заявку на бесплатную консультацию педагога</span>
+    <form class="popup-main-application__form popups__form">
+        <input class="feedback-other__input popup-main-application__input" name="name" type="text" placeholder="Имя">
+        <input class="feedback-other__input popup-main-application__input" name="text" type="text" placeholder="Возраст ребенка">
+        <input class="feedback-other__input popup-main-application__input" name="phone" type="tel" placeholder="Телефон">
+        <button class="button popup-main-application__button">Жду звонка!</button>
+    </form>
+    <div class="popup-main-application__star popup-main-application__star_first"><svg class="star-popup">
+    <use xlink:href="images/icons/icons.svg#starlist"></use>
+</svg></div>
+    <div class="popup-main-application__star popup-main-application__star_second"><svg class="star-popup">
+    <use xlink:href="images/icons/icons.svg#starlist"></use>
+</svg></div>
+</div>
 
+<div id="popup-sign-up" style="display:none;" class="popup-main-application popups popup-sign-up">
+    <div class="popup-sign-up__block">
+        <button data-fancybox-close="" class="popups__button" title="Close">
+            <img class="popups__button-img" src="images/popups-button.svg" alt="">
+        </button>
+        <span class="popup-main-application__title popup-sign-up__title">Запись на пробный урок<br> в «ИнкоЛинк»</span>
+        <form class="popup-main-application__form popups__form popup-sign-up__form">
+            <input class="feedback-other__input popup-main-application__input popup-sign-up__input" name="name" type="text" placeholder="Имя">
+            <input class="feedback-other__input popup-main-application__input popup-sign-up__input" name="phone" type="tel" placeholder="Телефон">
 
-<script src="js/app.min.js?_v=20231229124358"></script>
+            <div class="popup-sign-up__select">
+                <div class="feedback-other__input popup-main-application__input popup-sign-up__input popup-sign-up__button_first">
+                    <span class="popup-sign-up__button_text">Выберите класс</span>
+                    <img class="popup-sign-up__arrow" src="images/shevron.svg" alt="">
+                    <input class="popup-sign-up__input-hidden" type="hidden" name="class">
+                </div>
+
+                <ul class="popup-sign-up__dropdown-menu">
+                    <li id="Нулевой класс" class="popup-sign-up__dropdown-element">Нулевой класс</li>
+                    <li id="Экспресс-курс подготовки к школе" class="popup-sign-up__dropdown-element">Экспресс-курс подготовки к школе</li>
+                    <li id="Годовой курс подготовки к школе" class="popup-sign-up__dropdown-element">Годовой курс подготовки к школе</li>
+                    <li id="Семейные классы" class="popup-sign-up__dropdown-element">Семейные классы</li>
+                    <li id="Умная продлёнка" class="popup-sign-up__dropdown-element">Умная продлёнка</li>
+                    <li id="Школьный русский язык (5-7 класс)" class="popup-sign-up__dropdown-element">Школьный русский язык (5-7 класс)</li>
+                    <li id="Английский язык для школьников" class="popup-sign-up__dropdown-element">Английский язык для школьников</li>
+                    <li id="Школьные интенсивы (1-4 класс)" class="popup-sign-up__dropdown-element">Школьные интенсивы (1-4 класс)</li>
+                    <li id="Английский язык" class="popup-sign-up__dropdown-element">Английский язык</li>
+                    <li id="Китайский язык" class="popup-sign-up__dropdown-element">Китайский язык</li>
+                    <li id="Немецкий язык" class="popup-sign-up__dropdown-element">Немецкий язык</li>
+                    <li id="Французский язык" class="popup-sign-up__dropdown-element">Французский язык</li>
+                    <li id="Русский язык для иностранцев" class="popup-sign-up__dropdown-element">Русский язык для иностранцев</li>
+                    <li id="Логопед" class="popup-sign-up__dropdown-element">Логопед</li>       
+                </ul>
+            </div>
+
+            <button class="button popup-main-application__button">Записаться</button>
+        </form>
+        <div class="popup-sign-up__wrapper">
+            <div class="popup-sign-up__star popup-sign-up__star_first"><svg class="star-popup-sign-up">
+    <use xlink:href="images/icons/icons.svg#starlist"></use>
+</svg></div>
+            <div class="popup-sign-up__star popup-sign-up__star_second"><svg class="star-popup-sign-up">
+    <use xlink:href="images/icons/icons.svg#starlist"></use>
+</svg></div>
+            <div class="popup-sign-up__star popup-sign-up__star_third"><svg class="star-popup-sign-up">
+    <use xlink:href="images/icons/icons.svg#starlist"></use>
+</svg></div>
+        </div>
+    </div>
+</div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js?_v=20240114230534" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.4.1/index.min.js?_v=20240114230534" integrity="sha512-BD6B4tou7H7CWpfaXthxgqwk7kHs/rPDEk9GD/Rvbx0sCOUdqtrvlBP/o64EmdP5lnGOS4j4FTcn0iPJx6bVCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.2/popup.min.js?_v=20240114230534"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js?_v=20240114230534"></script>
+<script src="js/app.min.js?_v=20240114230534"></script>
 
     </body>
 </html> 

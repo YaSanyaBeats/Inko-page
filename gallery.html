@@ -1,0 +1,301 @@
+<!doctype html>
+    <html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css?_v=20240114230534" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css?_v=20240114230534">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20240114230534">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?_v=20240114230534">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20240114230534"></script>
+    <title>Главная</title>
+  </head>
+    <body>
+        
+<header class="header">
+    <div class="burger__tint"></div>
+    <section class="container header__wrapper">
+      <a href="/" class="logo__wrapper">
+        <img src="images/logo.svg" class="header__logo">
+      </a>
+      <ul class="header__menu">
+        <li class="header-menu__element"><a href="/about.html" class="menu__link header-menu__link">О нас</a></li>
+        <li class="header-menu__element"><a href="/gallery.html" class="menu__link header-menu__link">Гелерея</a></li>
+        <li class="header-menu__element"><a href="/directions.html" class="menu__link header-menu__link">Направления</a></li>
+        <li class="header-menu__element"><a href="/news.html" class="menu__link header-menu__link">Новости</a></li>
+        <li class="header-menu__element"><a href="/" class="menu__link header-menu__link">Бюро переводов</a></li>
+        <li class="header-menu__element"><a href="/contacts.html" class="menu__link header-menu__link">Контакты</a></li>
+        <li class="header-menu__element"><a href="/reviews.html" class="menu__link header-menu__link">Отзывы</a></li>
+      </ul>
+      <a href="#" class="button button__header" data-fancybox data-src="#popup-main-application">Запись на собеседование</a>
+
+      <div class="burger__menu">
+        <a class="burger header__burger" data-bs-toggle="collapse" href="#burger-content" role="button" aria-expanded="true" aria-controls="burger-content"> 
+          <div class="burger__line burger__line_first"></div>
+          <div class="burger__line burger__line_second"></div>
+          <div class="burger__line burger__line_last"></div>
+        </a>
+        <div class="burger__content collapse" id="burger-content">
+          <a href="#" class="logo__wrapper logo__burger">
+            <svg class="header__logo burger__logo">
+    <use xlink:href="images/icons/icons.svg#logo-burger"></use>
+</svg>
+            <!--<img src = "images/logo.svg" class = "header__logo">-->
+          </a>
+          <ul class="burger__list">
+            <li class="header-menu__element"><svg class="star-list">
+    <use xlink:href="images/icons/icons.svg#starlist"></use>
+</svg><a href="/about.html" class="menu__link header-menu__link">О нас</a></li>
+            <li class="header-menu__element"><svg class="star-list">
+    <use xlink:href="images/icons/icons.svg#starlist"></use>
+</svg><a href="/gallery.html" class="menu__link header-menu__link">Гелерея</a></li>
+            <li class="header-menu__element"><svg class="star-list">
+    <use xlink:href="images/icons/icons.svg#starlist"></use>
+</svg><a href="/directions.html" class="menu__link header-menu__link">Направления</a></li>
+            <li class="header-menu__element"><svg class="star-list">
+    <use xlink:href="images/icons/icons.svg#starlist"></use>
+</svg><a href="/news.html" class="menu__link header-menu__link">Новости</a></li>
+            <li class="header-menu__element"><svg class="star-list">
+    <use xlink:href="images/icons/icons.svg#starlist"></use>
+</svg><a href="/" class="menu__link header-menu__link">Бюро переводов</a></li>
+            <li class="header-menu__element"><svg class="star-list">
+    <use xlink:href="images/icons/icons.svg#starlist"></use>
+</svg><a href="/contacts.html" class="menu__link header-menu__link">Контакты</a></li>
+            <li class="header-menu__element"><svg class="star-list">
+    <use xlink:href="images/icons/icons.svg#starlist"></use>
+</svg><a href="/reviews.html" class="menu__link header-menu__link">Отзывы</a></li>
+          </ul>
+          <a class="button button__burger" data-fancybox data-src="#popup-main-application">Запись на собеседование</a>
+          <div class="burger__icon-star">
+            <img class="icon-star icon-star__first" src="images/burgerstar.svg" alt="">
+          </div>
+          <div class="burger__icon-star">
+            <img class="icon-star icon-star__second" src="images/burgerstar.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </header>
+  
+  
+        <main class="main main-custom">
+            <section class="hero hero-gallery">
+    <div class="container hero-gallery__container hero__container">
+        <ul class="hero__breadcrumbs">
+            <li><a href="/" class="hero-breadcrumbs__text">Главная</a> /</li>
+            <li><span class="hero-breadcrumbs__text">Галерея</span></li>
+        </ul>
+        <div class="hero-directions__content hero-gallery__content hero__content">
+            <h1 class="hero__text hero-about__title hero__title">Посмотрите,<br> как проходят<br> наши будни!</h1>
+            <img class="hero-gallery__arrow-icon hero-news__arrow-icon" src="images/gallery-arrow.svg" alt="">
+            <img class="hero-gallery__arrow-icon hero-news__arrow-icon hero-news__arrow-icon_mobile" src="images/news-arrow-mobile.svg" alt="">
+        </div>
+        <div class="social__buttons hero-about__button">
+            <a href="/"><img src="images/home.svg" alt=""></a>
+        </div>
+    </div>
+</section>
+            <section class="gallery">
+    <div class="container gallery__container">
+        <div class="gallery__block">
+            
+            <div class="gallery__element">
+                <div class="gallery__star"><svg class="star-gallery">
+    <use xlink:href="images/icons/icons.svg#starlist"></use>
+</svg></div>
+                <div class="gallery__img-wrapper">
+                    <picture><source srcset="images/gallery1.webp" type="image/webp"><img class="gallery__img" src="images/gallery1.jpg" alt=""></picture>
+                    <a class="gallery__img_hiden" data-fslightbox="gallery_id1" href="images/gallery1.jpg"></a>
+                    <a class="gallery__img_hiden" data-fslightbox="gallery_id1" href="images/gallery1.jpg"></a>
+                    <a class="gallery__img_hiden" data-fslightbox="gallery_id1" href="images/gallery1.jpg"></a>
+                </div>
+                
+                <div class="gallery__text-content">
+                    <span class="gallery__text">Наши будни</span>
+                    <a data-fslightbox="gallery_id1" href="images/gallery1.jpg" class="gallery__button">Смотреть фото</a>
+                </div>
+            </div>
+
+            <div class="gallery__element">
+                <div class="gallery__img-wrapper">
+                    <picture><source srcset="images/gallery2.webp" type="image/webp"><img class="gallery__img" src="images/gallery2.jpg" alt=""></picture>
+                    <a class="gallery__img_hiden" data-fslightbox="gallery_id2" href="images/gallery2.jpg"></a>
+                    <a class="gallery__img_hiden" data-fslightbox="gallery_id2" href="images/gallery2.jpg"></a>
+                    <a class="gallery__img_hiden" data-fslightbox="gallery_id2" href="images/gallery2.jpg"></a>
+                </div>
+                <div class="gallery__text-content">
+                    <span class="gallery__text">Хэллоуин</span>
+                    <a data-fslightbox="gallery_id2" href="images/gallery2.jpg" class="gallery__button">Смотреть фото</a>
+                </div>
+            </div>
+
+            <div class="gallery__element">
+                <div class="gallery__img-wrapper">
+                    <picture><source srcset="images/gallery1.webp" type="image/webp"><img class="gallery__img" src="images/gallery1.jpg" alt=""></picture>
+                    <a class="gallery__img_hiden" data-fslightbox="gallery_id3" href="images/gallery1.jpg"></a>
+                    <a class="gallery__img_hiden" data-fslightbox="gallery_id3" href="images/gallery1.jpg"></a>
+                    <a class="gallery__img_hiden" data-fslightbox="gallery_id3" href="images/gallery1.jpg"></a>
+                </div>
+                
+                <div class="gallery__text-content">
+                    <span class="gallery__text">Наши будни</span>
+                    <a data-fslightbox="gallery_id3" href="images/gallery1.jpg" class="gallery__button">Смотреть фото</a>
+                </div>
+            </div>
+
+            <div class="gallery__element">
+                <div class="gallery__img-wrapper">
+                    <picture><source srcset="images/gallery2.webp" type="image/webp"><img class="gallery__img" src="images/gallery2.jpg" alt=""></picture>
+                    <a class="gallery__img_hiden" data-fslightbox="gallery_id4" href="images/gallery2.jpg"></a>
+                    <a class="gallery__img_hiden" data-fslightbox="gallery_id4" href="images/gallery2.jpg"></a>
+                    <a class="gallery__img_hiden" data-fslightbox="gallery_id4" href="images/gallery2.jpg"></a>
+                </div>
+                <div class="gallery__text-content">
+                    <span class="gallery__text">Хэллоуин</span>
+                    <a data-fslightbox="gallery_id4" href="images/gallery2.jpg" class="gallery__button">Смотреть фото</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="gallery__next">
+            <img src="images/gallery-button.svg" alt="">
+        </div>
+    </div>
+</section>
+            <section class="feedback-contacts feedback-other">
+    <div class="container feedback-contacts__container">
+        <div class="feedback-contacts__block feedback-other__block">
+
+            <span class="feedback-contacts__title feedback-other__title">Узнайте больше об обучении в школе</span>
+            <span class="feedback-contacts__accent">Отправьте заявку и получите консультацию по всем вопросам</span>
+
+            <form class="feedback-contacts__form feedback-other__form">
+                <input class="feedback-other__input feedback-contacts__input" name="name" type="text" placeholder="Имя">
+                <input class="feedback-other__input feedback-contacts__input" name="phone" type="tel" placeholder="Телефон">
+                <input class="feedback-other__input feedback-contacts__input" name="email" type="email" placeholder="Почта">
+                <button class="feedback-contacts__button">Отправить</button>
+            </form>
+            <div class="feedback-contacts__star-wrapper feedback-other__star-wrapper">
+                <div class="feedback-contacts__star feedback-contacts__star_first"><img class="feedback__icon-star" src="images/burgerstar.svg" alt=""></div>
+                <div class="feedback-contacts__star feedback-contacts__star_second"><img class="feedback__icon-star" src="images/burgerstar.svg" alt=""></div>
+                <div class="feedback-contacts__star feedback-contacts__star_third"><img class="feedback__icon-star" src="images/burgerstar.svg" alt=""></div>
+            </div>
+        </div>
+    </div>
+</section>
+        </main>
+        <footer class="footer">
+    <div class="container footer__wrapper">
+        <div class="footer__main-content">
+            <ul class="footer__menu">
+                <li class="header-menu__element"><a href="#" class="menu__link footer-menu__link">О нас</a></li>
+                <li class="header-menu__element"><a href="#" class="menu__link footer-menu__link">Статьи</a></li>
+                <li class="header-menu__element"><a href="#" class="menu__link footer-menu__link">Сертификаты</a></li>
+                <li class="header-menu__element"><a href="#" class="menu__link footer-menu__link">Фотогалерея</a></li>
+                </ul>
+            <div class="footer__map footer__map_first">
+                <iframe class="footer__frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3Acb65bca6b97e7f9a6d3d6b3e26d6a7beec1632bf33032aee82e6cee316ac25e1&amp;source=constructor" width="539" height="400" frameborder="0"></iframe>
+            </div>
+            <div class="footer__info">
+                <span class="hero__text footer__accent">+7 (906) 625-54-54</span>
+                <span class="hero__text footer__text">
+                    г. Новомосковск, ул. Дзержинского, 15<br>
+                    e-mail: info@incolink.ru<br>
+                </span>
+                <div class="social__buttons footer__social">
+                    <a href="#" class="button__green hero-button__green"><picture><source srcset="images/message.webp" type="image/webp"><img class="social__image" src="images/message.png" alt=""></picture></a>
+                    <a href="#" class="button__green hero-button__green"><picture><source srcset="images/phone.webp" type="image/webp"><img class="social__image" src="images/phone.png" alt=""></picture></a>
+                    <a href="#" class="button__green hero-button__green"><picture><source srcset="images/tg.webp" type="image/webp"><img class="social__image" src="images/tg.png" alt=""></picture></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__map footer__map_second">
+            <iframe class="footer__frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3Acb65bca6b97e7f9a6d3d6b3e26d6a7beec1632bf33032aee82e6cee316ac25e1&amp;source=constructor" width="539" height="400" frameborder="0"></iframe>
+        </div>
+        <div class="footer__second-content">
+            <span class="footer-second__text">ИнкоЛинк, 2024 ©</span>
+            <a class="menu__link footer-second__link">Сведения об образовательной организации</a>
+        </div>
+    </div>
+</footer>
+<!-- Popups -->
+<div id="popup-main-application" style="display:none;" class="popup-main-application popups">
+    <button data-fancybox-close="" class="popups__button" title="Close">
+        <img class="popups__button-img" src="images/popups-button.svg" alt="">
+    </button>
+    <span class="popup-main-application__title">Оставьте заявку на бесплатную консультацию педагога</span>
+    <form class="popup-main-application__form popups__form">
+        <input class="feedback-other__input popup-main-application__input" name="name" type="text" placeholder="Имя">
+        <input class="feedback-other__input popup-main-application__input" name="text" type="text" placeholder="Возраст ребенка">
+        <input class="feedback-other__input popup-main-application__input" name="phone" type="tel" placeholder="Телефон">
+        <button class="button popup-main-application__button">Жду звонка!</button>
+    </form>
+    <div class="popup-main-application__star popup-main-application__star_first"><svg class="star-popup">
+    <use xlink:href="images/icons/icons.svg#starlist"></use>
+</svg></div>
+    <div class="popup-main-application__star popup-main-application__star_second"><svg class="star-popup">
+    <use xlink:href="images/icons/icons.svg#starlist"></use>
+</svg></div>
+</div>
+
+<div id="popup-sign-up" style="display:none;" class="popup-main-application popups popup-sign-up">
+    <div class="popup-sign-up__block">
+        <button data-fancybox-close="" class="popups__button" title="Close">
+            <img class="popups__button-img" src="images/popups-button.svg" alt="">
+        </button>
+        <span class="popup-main-application__title popup-sign-up__title">Запись на пробный урок<br> в «ИнкоЛинк»</span>
+        <form class="popup-main-application__form popups__form popup-sign-up__form">
+            <input class="feedback-other__input popup-main-application__input popup-sign-up__input" name="name" type="text" placeholder="Имя">
+            <input class="feedback-other__input popup-main-application__input popup-sign-up__input" name="phone" type="tel" placeholder="Телефон">
+
+            <div class="popup-sign-up__select">
+                <div class="feedback-other__input popup-main-application__input popup-sign-up__input popup-sign-up__button_first">
+                    <span class="popup-sign-up__button_text">Выберите класс</span>
+                    <img class="popup-sign-up__arrow" src="images/shevron.svg" alt="">
+                    <input class="popup-sign-up__input-hidden" type="hidden" name="class">
+                </div>
+
+                <ul class="popup-sign-up__dropdown-menu">
+                    <li id="Нулевой класс" class="popup-sign-up__dropdown-element">Нулевой класс</li>
+                    <li id="Экспресс-курс подготовки к школе" class="popup-sign-up__dropdown-element">Экспресс-курс подготовки к школе</li>
+                    <li id="Годовой курс подготовки к школе" class="popup-sign-up__dropdown-element">Годовой курс подготовки к школе</li>
+                    <li id="Семейные классы" class="popup-sign-up__dropdown-element">Семейные классы</li>
+                    <li id="Умная продлёнка" class="popup-sign-up__dropdown-element">Умная продлёнка</li>
+                    <li id="Школьный русский язык (5-7 класс)" class="popup-sign-up__dropdown-element">Школьный русский язык (5-7 класс)</li>
+                    <li id="Английский язык для школьников" class="popup-sign-up__dropdown-element">Английский язык для школьников</li>
+                    <li id="Школьные интенсивы (1-4 класс)" class="popup-sign-up__dropdown-element">Школьные интенсивы (1-4 класс)</li>
+                    <li id="Английский язык" class="popup-sign-up__dropdown-element">Английский язык</li>
+                    <li id="Китайский язык" class="popup-sign-up__dropdown-element">Китайский язык</li>
+                    <li id="Немецкий язык" class="popup-sign-up__dropdown-element">Немецкий язык</li>
+                    <li id="Французский язык" class="popup-sign-up__dropdown-element">Французский язык</li>
+                    <li id="Русский язык для иностранцев" class="popup-sign-up__dropdown-element">Русский язык для иностранцев</li>
+                    <li id="Логопед" class="popup-sign-up__dropdown-element">Логопед</li>       
+                </ul>
+            </div>
+
+            <button class="button popup-main-application__button">Записаться</button>
+        </form>
+        <div class="popup-sign-up__wrapper">
+            <div class="popup-sign-up__star popup-sign-up__star_first"><svg class="star-popup-sign-up">
+    <use xlink:href="images/icons/icons.svg#starlist"></use>
+</svg></div>
+            <div class="popup-sign-up__star popup-sign-up__star_second"><svg class="star-popup-sign-up">
+    <use xlink:href="images/icons/icons.svg#starlist"></use>
+</svg></div>
+            <div class="popup-sign-up__star popup-sign-up__star_third"><svg class="star-popup-sign-up">
+    <use xlink:href="images/icons/icons.svg#starlist"></use>
+</svg></div>
+        </div>
+    </div>
+</div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js?_v=20240114230534" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.4.1/index.min.js?_v=20240114230534" integrity="sha512-BD6B4tou7H7CWpfaXthxgqwk7kHs/rPDEk9GD/Rvbx0sCOUdqtrvlBP/o64EmdP5lnGOS4j4FTcn0iPJx6bVCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.2/popup.min.js?_v=20240114230534"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js?_v=20240114230534"></script>
+<script src="js/app.min.js?_v=20240114230534"></script>
+
+    </body>
+</html> 
