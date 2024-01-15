@@ -3148,6 +3148,7 @@ html.with-fancybox {
   right: 0;
   left: 0;
   bottom: -260px;
+  z-index: 3;
 }
 
 .feedback-contacts__block {
@@ -6795,7 +6796,4 @@ html.with-fancybox {
 @media (max-width: 378px){
 
   .webp .hero-news{ background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.05))), url(../images/hero-news.webp) no-repeat 95% 0%; background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url(../images/hero-news.webp) no-repeat 95% 0%; }
-}
-.feedback-contacts__absolute{
-  z-index: 3;
 }
