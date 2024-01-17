@@ -945,11 +945,11 @@ html.with-fancybox {
 }
 
 .header_white .header__logo {
-  fill: white;
+  fill: white !important;
 }
 
 .header_scroll .header-menu__link {
-  color: white;
+  color: white !important;
 }
 
 .header_scroll {
